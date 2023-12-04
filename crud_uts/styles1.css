@@ -1,0 +1,8 @@
+.background-container {
+    background-image: url('img/bg.jpg'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Atur sesuai kebutuhan Anda */
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%; /* Atur lebar sesuai kebutuhan Anda */
+    height: 100vh; /* Atur tinggi sesuai kebutuhan Anda */
+  }

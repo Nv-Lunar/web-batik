@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+         function searchGallery() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        galleryItems.forEach(item => {
+            const caption = item.querySelector('.card-text').textContent.toLowerCase();
+            if (caption.includes(searchTerm)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+    </script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a076d05399.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Foto dengan Navbar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        /* Style untuk galeri foto */
+        .card {
+            margin: 10px;
+            width: 300px;
+            margin-bottom: 100px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+        <a class="navbar-brand">XI PPLG 1</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.php">Home </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Galeri">Galeri</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="button" onclick="searchGallery()">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <section class="jumbotron text-center" id="Home" style="height: 800px;">
+        <div class="justify-content-center" style="padding-top: 200px;">
+            <h1 class="display-4">XI PPLG 1</h1>
+            <img src="img/pp.jpg" alt="" width="150" class="rounded-circle img-thumbnail">
+            <p class="lead">PPLG | SMKN 5 Malang</p>
+        </div>
+    </section>
+
+    <section id="Galeri">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h1>Galeri</h1>
+            </div>
+          </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/1.jpg" class="card-img-top" alt="img1">
+                    <div class="card-body">
+                        <p class="card-text">AHMAD FATHUL ALIM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/2.jpg" class="card-img-top" alt="img2">
+                    <div class="card-body">
+                        <p class="card-text">AHMAD FIRDANDI RAHMAN</p>
+                        <a href="https://instagram.com/dndirhmn_?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/3.jpg" class="card-img-top" alt="img3">
+                    <div class="card-body">
+                        <p class="card-text">AHMAD ZULFY WALIYURRAHMAN</p>
+                        <a href="https://instagram.com/ahmdzulfy._?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/4.jpg" class="card-img-top" alt="img4">
+                    <div class="card-body">
+                        <p class="card-text">AJENG RETNO SAFITRIA</p>
+                        <a href="https://instagram.com/ajexgsfsf?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/5.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">ALDIANSIAH PUTRA ADITIA</p>
+                        <a href="https://www.instagram.com/piksadiyt1" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/6.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">ALDO AZRUL ANANDA</p>
+                        <a href="https://www.instagram.com/aldo_azrul_ananda" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/7.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">ALIGA MULYA RAMLI</p>
+                        <a href="https://instagram.com/aligaaa._?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/8.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">ANDIA ALSHA</p>
+                        <a href="https://www.instagram.com/andd_alsh" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/9.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">ANGELICA PUTRI WAHYUNI</p>
+                        <a href="https://www.instagram.com/anglcaaxz" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/10.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">ANSHORI ZAIDAN BIMANTARA</p>
+                        <a href="https://www.instagram.com/ans_zaid4n" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/11.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">AQIDATUL IZZA</p>
+                        <a href="https://instagram.com/aqtlizzaa?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/12.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">ARIVIANO CHOIRUS SHOLEH</p>
+                        <a href="https://www.instagram.com/dzvanox" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/13.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">AUREL LELIA AZ ZAHRA</p>
+                        <a href="https://instagram.com/aurlbcth?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/14.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">AXEL GALANG SUTRISNO</p>
+                        <a href="https://www.instagram.com/galang_axel_sutrisno" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/15.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">AZIZAH NAILAH RAMADHANI</p>
+                        <a href="https://www.instagram.com/azizah.tamadhani" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/16.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">BA'AQY SETYO NUGROHO</p>
+                        <a href="https://www.instagram.com/xqysn_" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/17.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">BRAHMANA PANDU YUDISTIRA</p>
+                        <a href="https://www.instagram.com/brhmn._" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/18.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">CALVIN ARDIANSYAH</p>
+                        <a href="https://www.instagram.com/call_vinn_" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/19.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">CHEYSEA USWATUN NAJWA</p>
+                        <a href="https://instagram.com/ccheysea._?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/20.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">CHIKITA DWI ISNIAWATI</p>
+                        <a href="https://instagram.com/http.c07?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/21.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">DAFINA ADHA FATIA AZ-ZAHRO</p>
+                        <a href="https://instagram.com/dafinaadfz_?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/22.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">DAVID DEKA MAULANA</p>
+                        <a href="https://instagram.com/davdd.dekaa?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/23.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">DEANDA SCHATZI PUTRI RIWAYANTO</p>
+                        <a href="https://www.instagram.com/USERNAME" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/24.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">DHARMADHIKA JAYANA</p>
+                        <a href="https://www.instagram.com/dhxaa.zz" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/25.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">DIMAS YUSUF AL AKBAR</p>
+                        <a href="https://www.instagram.com/666zynx" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/26.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">DODIK DOY HANYEE</p>
+                        <a href="https://www.instagram.com/dxyyzzz" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/27.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">EKA AHMAD WAHYUDI</p>
+                        <a href="https://instagram.com/ekahmdd?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/28.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">FARREL ADINATA PUTRA WAHYUDI </p>
+                        <a href="https://www.instagram.com/justcall.meee" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/29.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">FAZDILLA NUR AINI</p>
+                        <a href="https://www.instagram.com/fzdlaa_dillannn" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/30.jpg" class="card-img-top" alt="img30">
+                    <div class="card-body">
+                        <p class="card-text">FEBRIGIO JACKY ALANZA JOHAN</p>
+                        <a href="https://www.instagram.com/soapsunlight" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/31.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">FIRDA MAREZA LAILA KHUMMAIRA</p>
+                        <a href="https://instagram.com/prdmrzz_?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/32.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">GARNETA SAPHIRE FAUST RUCIRAGATI</p>
+                        <a href="https://instagram.com/garnetasaphire?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/33.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">HABIBI CHANDRA PUTRA RIMANSYAH</p>
+                        <a href="https://www.instagram.com/USERNAME" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/34.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">ISARUH MUHAMMAD BAGA</p>
+                        <a href="https://instagram.com/isaruhwawh?igshid=NzZlODBkYWE4Ng==" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/35.jpg" class="card-img-top" alt="Foto 3">
+                    <div class="card-body">
+                        <p class="card-text">MOHD IZZALAN DANISH</p>
+                        <a href="https://www.instagram.com/USERNAME" target="_blank">
+                            <i class="fab fa-instagram"></i> Kunjungi Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="text-center text-white fixed-bottom bg-secondary">
+        <a href="https://instagram.com/xipp1gorgeous?igshid=NjIwNzIyMDk2Mg=="><p class="p3" style="margin: auto; padding: 10px 20px;">Instagram XI PPLG 1</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
